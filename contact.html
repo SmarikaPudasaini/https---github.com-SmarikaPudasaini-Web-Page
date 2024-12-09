@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width", initial-scale="1.0">
+    <title>My first webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="proconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppings:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+</head>
+<body>
+<section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-link">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="item.html">ITEM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+</section>
+
+<!--------- contact us --------->
+
+
+<section class="locations">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1017990.0275757749!2d25.018651099999996!3d60.1101664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sfi!4v1733582802903!5m2!1sen!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+
+</section>
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>ABC Road, XYZ Building</h5>
+                    <p>Hetauda, Nepal, IN</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+977 9845536833</h5>
+                    <p>Monday to Saturday, 10AM TO 7PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>info@mypassion.com</h5>
+                    <p>Email us for more query</p>
+                </span>
+            </div>
+        </div>
+<div class="contact-col">
+    
+    <form action="form-handler.php" method="post">
+        <input type="text" name="name" placeholder="Enter your name"required>
+        <input type="text" name="email" placeholder="Enter email address"required>
+        <input type="text" name="subject"placeholder="Enter your query"required>
+        <textarea rows="8" name="Message" placeholder="Message" required></textarea>
+        <button type="submit" class="hero-btn red-btn">Send Message</button>
+     </form>
+
+
+        </div>
+</section>
+
+
+
+<!------ Footer----->
+
+<section class="footer">
+    <h4> About Us</h4>
+    <p>Loremliquehrdeqwcfbhref4iufr9o2483pqeihdnecdsbc<br>jnhliuhknlkvbhUEHWUDNDDCLE8REHD</p>
+    <div class="icons">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> and passion</p>
+</section>
+
+
+
+<!---------Javascript for Toggle Menu--------->
+<script>
+
+    var navlink = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+
+</body>
+</html>
